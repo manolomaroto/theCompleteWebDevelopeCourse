@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQuery practices</title>
+	<script type="text/javascript" src="JS/jquery-1.11.3.min.js">
+
+	</script>
+	<style type="text/css">
+		.redSquare{
+			float:left;
+			width: 190px;
+			height:100px;
+			background-color: #ff0000;
+			margin: 10px;
+		}
+		#greenCircle{
+			float:left;
+			width:100px;
+			height:100px;
+			border-radius: 50px;
+			background-color: #00ff00;
+			margin:10px;
+		}
+	</style>
+</head>
+<body>
+<div id="greenCircle"></div>
+<button id="grow">Grow</button>
+<button id="small">Small</button>
+
+<script type="text/javascript">
+	$("#grow").click(function(){
+		$('#greenCircle').animate({width:'300px',height:"300px",backgroundColor:"#ff0000",borderRadius:'150px',
+			marginLeft:'100px',marginTop:'50px'},3000);
+	});
+
+	$("#small").click(function(){
+		$('#greenCircle').animate({width:'100px',height:"100px",backgroundColor:"#00ff00",borderRadius:'50px',
+			marginLeft:'0',marginTop:'0'},3000);
+	});
+
+	
+	
+</script>
+	
+</body>
+</html>
